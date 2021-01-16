@@ -1,0 +1,24 @@
+<html>
+    <%- include('partials/header') %>
+    <body>
+        <h1>Ejemplo de Model Viewer</h1>
+        <model-viewer 
+            src="assets/models/robotech.glb" 
+            auto-rotate
+            camera-controls
+            ar
+            skybox-image="./assets/img/spruit_sunrise_1k_HDR.hdr"
+            shadow-intensity="1"
+            shadow-softness="1"
+            poster ="./assets/thumbnails/robotech.png"
+        >  
+            <button class="Hotspot" slot="hotspot-1" data-position="-0.08931647700953096m 0.062204021185267355m 1.1651944656716886m" data-normal="-0.27072248903895824m -0.35905805489130405m -0.893189032146177m" data-visibility-attribute="visible">
+                <div class="HotspotAnnotation">Rueda</div>
+            </button><button class="Hotspot" slot="hotspot-3" data-position="0.23100925665200728m 0.6025651278145384m -0.04423205011744791m" data-normal="0.9999999999927691m -0.000003801820573102254m 8.896296834302009e-8m" data-visibility-attribute="visible">
+                <div class="HotspotAnnotation">Turbina</div>
+            </button><button class="Hotspot" slot="hotspot-4" data-position="-0.4142651107329836m 1.2174592584236774m -1.9966795220862101m" data-normal="-0.9202726932167947m -0.39025803559342026m -0.028228279690267203m" data-visibility-attribute="visible">
+                <div class="HotspotAnnotation">Aleron</div>
+            </button>
+        </model-viewer>
+    </body>
+</html>
